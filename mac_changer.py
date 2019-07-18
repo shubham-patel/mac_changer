@@ -11,7 +11,7 @@ def get_arguments():
     parser.add_option("-m", dest="new_mac", help="New MAC address")
     (options, arguments) = parser.parse_args()
     if not options.interface:
-        parser.error("[-] Please specify an interface,use --help for more information")
+        parser.error("[-] Please specify an interface,use --help for more information (type ifconfig to know the interface name)")
     elif not options.new_mac:
         parser.error("[-] Please specify a new mac,use --help for more information")
     return options
