@@ -1,4 +1,5 @@
 # mac_changer
+This tool is for linux os
 It is a simple tool which helps you to change your MAC address of your system.
 It is a command line tool,requiring python2.7.
 You need to provide interface and new MAC that needed to be changed.
