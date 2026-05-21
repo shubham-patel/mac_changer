@@ -26,7 +26,7 @@ def mac_change(interface, new_mac):
 
 
 def current_MAC(interface):
-    result = subprocess.check_output(["ifconfig", interface])
+    result = subprocess.check_output(["ifconfig", interface]).decode()
     mac_result = re.search(r"\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", result)
 
     if mac_result:
